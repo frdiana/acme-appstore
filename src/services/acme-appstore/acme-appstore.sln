@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Games", "games\AcmeAppStore.Games\Acme.AppStore.Games.csproj", "{DDE7BEC4-D458-4672-97F0-9993E0DDF289}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Apps", "apps\AcmeAppStore.Apps\Acme.AppStore.Apps.csproj", "{9C69C6CC-C2AB-46D5-BDAE-376D6D649081}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Movies", "movies\AcmeAppStore.Movies\Acme.AppStore.Movies.csproj", "{F121CB40-20E0-44C8-88A6-E0235F26CCEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Books", "books\AcmeAppStore.Books\Acme.AppStore.Books.csproj", "{8EB1FA65-80CB-49B4-B2B2-A2297D2AD16B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{B9A7438D-C9AA-487F-8037-B1606401478D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Books", "Books", "{1BF745FC-80FD-4706-B3BC-60C2E6F289B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{89654B51-D50D-4121-9DFE-104EFB442006}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Movies", "Movies", "{3BFFF64E-291F-4D7A-8136-BB3A9AF9731F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{DAD260D8-76A6-4E7D-B8EE-E1CEEBFE529D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{4F2B7A9F-79E1-4C05-BE9E-8A47102979BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Basket", "basket\Acme.AppStore.Basket\Acme.AppStore.Basket.csproj", "{7866C578-D76C-410E-9E00-8C3AAB3BEE59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Discount", "discount\Acme.AppStore.Discount\Acme.AppStore.Discount.csproj", "{22221DA4-26B7-47E4-A21A-0B28F6FE9FDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{2581580C-95BA-403F-B705-1306D0A3630D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.AppStore.Common", "Acme.AppStore.Common\Acme.AppStore.Common.csproj", "{5A7C3135-7DCF-494D-8540-7CEE50D5ED10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDE7BEC4-D458-4672-97F0-9993E0DDF289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE7BEC4-D458-4672-97F0-9993E0DDF289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE7BEC4-D458-4672-97F0-9993E0DDF289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE7BEC4-D458-4672-97F0-9993E0DDF289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C69C6CC-C2AB-46D5-BDAE-376D6D649081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C69C6CC-C2AB-46D5-BDAE-376D6D649081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C69C6CC-C2AB-46D5-BDAE-376D6D649081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C69C6CC-C2AB-46D5-BDAE-376D6D649081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F121CB40-20E0-44C8-88A6-E0235F26CCEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F121CB40-20E0-44C8-88A6-E0235F26CCEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F121CB40-20E0-44C8-88A6-E0235F26CCEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F121CB40-20E0-44C8-88A6-E0235F26CCEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB1FA65-80CB-49B4-B2B2-A2297D2AD16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB1FA65-80CB-49B4-B2B2-A2297D2AD16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB1FA65-80CB-49B4-B2B2-A2297D2AD16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB1FA65-80CB-49B4-B2B2-A2297D2AD16B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7866C578-D76C-410E-9E00-8C3AAB3BEE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7866C578-D76C-410E-9E00-8C3AAB3BEE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7866C578-D76C-410E-9E00-8C3AAB3BEE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7866C578-D76C-410E-9E00-8C3AAB3BEE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22221DA4-26B7-47E4-A21A-0B28F6FE9FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22221DA4-26B7-47E4-A21A-0B28F6FE9FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22221DA4-26B7-47E4-A21A-0B28F6FE9FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22221DA4-26B7-47E4-A21A-0B28F6FE9FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A7C3135-7DCF-494D-8540-7CEE50D5ED10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7C3135-7DCF-494D-8540-7CEE50D5ED10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7C3135-7DCF-494D-8540-7CEE50D5ED10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7C3135-7DCF-494D-8540-7CEE50D5ED10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DDE7BEC4-D458-4672-97F0-9993E0DDF289} = {89654B51-D50D-4121-9DFE-104EFB442006}
+		{9C69C6CC-C2AB-46D5-BDAE-376D6D649081} = {B9A7438D-C9AA-487F-8037-B1606401478D}
+		{F121CB40-20E0-44C8-88A6-E0235F26CCEB} = {3BFFF64E-291F-4D7A-8136-BB3A9AF9731F}
+		{8EB1FA65-80CB-49B4-B2B2-A2297D2AD16B} = {1BF745FC-80FD-4706-B3BC-60C2E6F289B6}
+		{7866C578-D76C-410E-9E00-8C3AAB3BEE59} = {DAD260D8-76A6-4E7D-B8EE-E1CEEBFE529D}
+		{22221DA4-26B7-47E4-A21A-0B28F6FE9FDD} = {4F2B7A9F-79E1-4C05-BE9E-8A47102979BA}
+		{5A7C3135-7DCF-494D-8540-7CEE50D5ED10} = {2581580C-95BA-403F-B705-1306D0A3630D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E838A483-399F-45FD-BE0D-3D21017D1E3A}
+	EndGlobalSection
+EndGlobal
