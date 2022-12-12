@@ -31,9 +31,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{258158
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.AppStore.Common", "Acme.AppStore.Common\Acme.AppStore.Common.csproj", "{5A7C3135-7DCF-494D-8540-7CEE50D5ED10}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RaccomandationEngine", "RaccomandationEngine", "{6E823BCB-BB98-40C3-B4D5-1CFC2BF4C9ED}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReccomandationEngine", "ReccomandationEngine", "{6E823BCB-BB98-40C3-B4D5-1CFC2BF4C9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.AppStore.RaccomandationEngine", "raccomandationEngine\Acme.AppStore.RaccomandationEngine\Acme.AppStore.RaccomandationEngine.csproj", "{B55DE750-E4D2-43A9-8B90-569496E52D29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.AppStore.ReccomandationEngine", "raccomandationEngine\Acme.AppStore.RaccomandationEngine\Acme.AppStore.ReccomandationEngine.csproj", "{B55DE750-E4D2-43A9-8B90-569496E52D29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
