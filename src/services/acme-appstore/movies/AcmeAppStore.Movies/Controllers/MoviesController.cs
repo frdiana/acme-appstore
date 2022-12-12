@@ -8,7 +8,7 @@ namespace Acme.AppStore.Movies.Controllers;
 [Route("api/v{version:apiVersion}/[controller]")]
 public class MoviesController : ControllerBase
 {
-    private static Movie[] Movies => new Movie[] { new Movie("WhatsApp", "Messaging"), new Movie("TikTok", "Social Network"), new Movie("Youtube", "Media"), new Movie("Twitter", "Social Network"), new Movie("Spotify", "Music") };
+    private static Movie[] Movies => new Movie[] { new Movie("The Godfather", "Movie"), new Movie("Forrest Gump", "Movie"), new Movie("Avatar", "Movie"), new Movie("Titanic", "Movie"), new Movie("Heat", "Music") };
 
     [HttpGet(Name = "GetMovies")]
     public Movie[] Get()

@@ -8,7 +8,7 @@ namespace Acme.AppStore.Games.Controllers;
 [Route("api/v{version:apiVersion}/[controller]")]
 public class GamesController : ControllerBase
 {
-    private static Game[] Games => new Game[] { new Game("WhatsApp", "Messaging"), new Game("TikTok", "Social Network"), new Game("Youtube", "Media"), new Game("Twitter", "Social Network"), new Game("Spotify", "Music") };
+    private static Game[] Games => new Game[] { new Game("Fifa 2022", "Soccer simulation"), new Game("GTA", "Game"), new Game("Formula One", "Car simulation"), new Game("PES", "Soccer simulation"), new Game("Forza Motorsport", "Car simulation") };
 
     [HttpGet(Name = "GetGames")]
     public Game[] Get()
