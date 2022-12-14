@@ -1,0 +1,28 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: acme-app-store-books
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: acme-app-store-books
+  template:
+    metadata:
+      labels:
+        app: acme-app-store-books
+    spec:
+      containers:
+      - name: acme-app-store-books
+        image: frdianaacr.azurecr.io/acmeappstore-books:v1
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi
+        ports:
+        - containerPort: 80
+          name: redis

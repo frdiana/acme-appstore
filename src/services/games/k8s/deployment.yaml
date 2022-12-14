@@ -1,0 +1,28 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: acme-app-store-games
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: acme-app-store-games
+  template:
+    metadata:
+      labels:
+        app: acme-app-store-games
+    spec:
+      containers:
+      - name: acme-app-store-games
+        image: frdianaacr.azurecr.io/acmeappstore-games:v0.0.2
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi
+        ports:
+        - containerPort: 80
+          name: redis
