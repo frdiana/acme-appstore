@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{B9A7438D-C9AA-487F-8037-B1606401478D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Books", "Books", "{1BF745FC-80FD-4706-B3BC-60C2E6F289B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{89654B51-D50D-4121-9DFE-104EFB442006}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Movies", "Movies", "{3BFFF64E-291F-4D7A-8136-BB3A9AF9731F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{DAD260D8-76A6-4E7D-B8EE-E1CEEBFE529D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{4F2B7A9F-79E1-4C05-BE9E-8A47102979BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{2581580C-95BA-403F-B705-1306D0A3630D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReccomandationEngine", "ReccomandationEngine", "{6E823BCB-BB98-40C3-B4D5-1CFC2BF4C9ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Apps", "apps\src\Acme.AppStore.Apps.csproj", "{4003393E-CC99-405C-80CE-8361B12D61C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Basket", "basket\src\Acme.AppStore.Basket.csproj", "{0CE1EC41-8411-4D98-8D57-F3248610FF4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Books", "books\src\Acme.AppStore.Books.csproj", "{11A2EBE4-0E62-4268-8BED-602B239C235A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Common", "common\Acme.AppStore.Common.csproj", "{203EA380-DC73-49FB-871C-1C31D344FEF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Discount", "discount\src\Acme.AppStore.Discount.csproj", "{C05E60B6-B981-49B0-8B6A-F50973FF68B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Games", "games\src\Acme.AppStore.Games.csproj", "{749BF1AE-D97C-4377-A6F2-F397720C0483}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.Movies", "movies\src\Acme.AppStore.Movies.csproj", "{890A66E0-7D64-4266-9BA4-0D2011C61835}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.AppStore.ReccomandationEngine", "reccomandationEngine\src\Acme.AppStore.ReccomandationEngine.csproj", "{240B7F47-527F-4949-A032-8DD1E7163A84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4003393E-CC99-405C-80CE-8361B12D61C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4003393E-CC99-405C-80CE-8361B12D61C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4003393E-CC99-405C-80CE-8361B12D61C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4003393E-CC99-405C-80CE-8361B12D61C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE1EC41-8411-4D98-8D57-F3248610FF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE1EC41-8411-4D98-8D57-F3248610FF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE1EC41-8411-4D98-8D57-F3248610FF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE1EC41-8411-4D98-8D57-F3248610FF4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A2EBE4-0E62-4268-8BED-602B239C235A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A2EBE4-0E62-4268-8BED-602B239C235A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A2EBE4-0E62-4268-8BED-602B239C235A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A2EBE4-0E62-4268-8BED-602B239C235A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203EA380-DC73-49FB-871C-1C31D344FEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203EA380-DC73-49FB-871C-1C31D344FEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203EA380-DC73-49FB-871C-1C31D344FEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203EA380-DC73-49FB-871C-1C31D344FEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05E60B6-B981-49B0-8B6A-F50973FF68B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05E60B6-B981-49B0-8B6A-F50973FF68B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05E60B6-B981-49B0-8B6A-F50973FF68B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05E60B6-B981-49B0-8B6A-F50973FF68B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{749BF1AE-D97C-4377-A6F2-F397720C0483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{749BF1AE-D97C-4377-A6F2-F397720C0483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{749BF1AE-D97C-4377-A6F2-F397720C0483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{749BF1AE-D97C-4377-A6F2-F397720C0483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{890A66E0-7D64-4266-9BA4-0D2011C61835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890A66E0-7D64-4266-9BA4-0D2011C61835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890A66E0-7D64-4266-9BA4-0D2011C61835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890A66E0-7D64-4266-9BA4-0D2011C61835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{240B7F47-527F-4949-A032-8DD1E7163A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{240B7F47-527F-4949-A032-8DD1E7163A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{240B7F47-527F-4949-A032-8DD1E7163A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{240B7F47-527F-4949-A032-8DD1E7163A84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4003393E-CC99-405C-80CE-8361B12D61C3} = {B9A7438D-C9AA-487F-8037-B1606401478D}
+		{0CE1EC41-8411-4D98-8D57-F3248610FF4E} = {DAD260D8-76A6-4E7D-B8EE-E1CEEBFE529D}
+		{11A2EBE4-0E62-4268-8BED-602B239C235A} = {1BF745FC-80FD-4706-B3BC-60C2E6F289B6}
+		{203EA380-DC73-49FB-871C-1C31D344FEF2} = {2581580C-95BA-403F-B705-1306D0A3630D}
+		{C05E60B6-B981-49B0-8B6A-F50973FF68B3} = {4F2B7A9F-79E1-4C05-BE9E-8A47102979BA}
+		{749BF1AE-D97C-4377-A6F2-F397720C0483} = {89654B51-D50D-4121-9DFE-104EFB442006}
+		{890A66E0-7D64-4266-9BA4-0D2011C61835} = {3BFFF64E-291F-4D7A-8136-BB3A9AF9731F}
+		{240B7F47-527F-4949-A032-8DD1E7163A84} = {6E823BCB-BB98-40C3-B4D5-1CFC2BF4C9ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E838A483-399F-45FD-BE0D-3D21017D1E3A}
+	EndGlobalSection
+EndGlobal
