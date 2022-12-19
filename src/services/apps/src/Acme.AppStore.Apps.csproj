@@ -17,11 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Acme.AppStore.Common\Acme.AppStore.Common.csproj" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\..\common\Acme.AppStore.Common.csproj" />
   </ItemGroup>
 
 </Project>

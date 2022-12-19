@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: acme-app-store-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /api/v1/books
+        pathType: Prefix
+        backend:
+          service:
+            name: acme-app-store-books
+            port:
+              number: 80
+      - path: /books
+        pathType: Prefix
+        backend:
+          service:
+            name: acme-app-store-books
+            port:
+              number: 80
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name:  acme-app-store-books
+            port:
+              number: 80

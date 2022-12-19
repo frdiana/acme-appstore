@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: acme-app-store-books
-        image: frdianaacr.azurecr.io/acmeappstore-books:v1
+        image: frdianaacr.azurecr.io/acmeappstore-books:v0.0.6
         resources:
           requests:
             cpu: 100m

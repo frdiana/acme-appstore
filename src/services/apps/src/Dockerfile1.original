@@ -7,12 +7,12 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["apps/src/Acme.AppStore.Apps.csproj", "apps/src/"]
-COPY ["common/Acme.AppStore.Common.csproj", "common/"]
-RUN dotnet restore "apps/src/Acme.AppStore.Apps.csproj"
+COPY ["apps/AcmeAppStore.Apps/Acme.AppStore.Apps.csproj", "apps/AcmeAppStore.Apps/"]
+COPY ["Acme.AppStore.Common/Acme.AppStore.Common.csproj", "Acme.AppStore.Common/"]
+RUN dotnet restore "apps/AcmeAppStore.Apps/Acme.AppStore.Apps.csproj"
 COPY . .
-WORKDIR "/src/apps/src"
-RUN dotnet build "Acme.AppStore.Apps.csproj" -c Release -o /app/build
+WORKDIR "/src/apps/AcmeAppStore.Apps"
+RUN dotnet build "Acme.AppStore.Apps.csproj" -c Debug -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "Acme.AppStore.Apps.csproj" -c Release -o /app/publish /p:UseAppHost=false

@@ -7,16 +7,17 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["raccomandationEngine/Acme.AppStore.RaccomandationEngine/Acme.AppStore.RaccomandationEngine.csproj", "raccomandationEngine/Acme.AppStore.RaccomandationEngine/"]
-RUN dotnet restore "raccomandationEngine/Acme.AppStore.RaccomandationEngine/Acme.AppStore.RaccomandationEngine.csproj"
+COPY ["reccomandationEngine/src/Acme.AppStore.ReccomandationEngine.csproj", "reccomandationEngine/src/"]
+COPY ["common/Acme.AppStore.Common.csproj", "common/"]
+RUN dotnet restore "reccomandationEngine/src/Acme.AppStore.ReccomandationEngine.csproj"
 COPY . .
-WORKDIR "/src/raccomandationEngine/Acme.AppStore.RaccomandationEngine"
-RUN dotnet build "Acme.AppStore.RaccomandationEngine.csproj" -c Release -o /app/build
+WORKDIR "/src/reccomandationEngine/src"
+RUN dotnet build "Acme.AppStore.ReccomandationEngine.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Acme.AppStore.RaccomandationEngine.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "Acme.AppStore.ReccomandationEngine.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Acme.AppStore.RaccomandationEngine.dll"]
+ENTRYPOINT ["dotnet", "Acme.AppStore.ReccomandationEngine.dll"]

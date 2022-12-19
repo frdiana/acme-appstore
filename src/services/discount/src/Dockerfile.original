@@ -7,11 +7,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["discount/src/Acme.AppStore.Discount.csproj", "discount/src/"]
-COPY ["common/Acme.AppStore.Common.csproj", "common/"]
-RUN dotnet restore "discount/src/Acme.AppStore.Discount.csproj"
+COPY ["discount/Acme.AppStore.Discount/Acme.AppStore.Discount.csproj", "discount/Acme.AppStore.Discount/"]
+RUN dotnet restore "discount/Acme.AppStore.Discount/Acme.AppStore.Discount.csproj"
 COPY . .
-WORKDIR "/src/discount/src"
+WORKDIR "/src/discount/Acme.AppStore.Discount"
 RUN dotnet build "Acme.AppStore.Discount.csproj" -c Release -o /app/build
 
 FROM build AS publish

@@ -7,11 +7,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["books/src/Acme.AppStore.Books.csproj", "books/src/"]
-COPY ["common/Acme.AppStore.Common.csproj", "common/"]
-RUN dotnet restore "books/src/Acme.AppStore.Books.csproj"
+COPY ["books/AcmeAppStore.Books/Acme.AppStore.Books.csproj", "books/AcmeAppStore.Books/"]
+COPY ["Acme.AppStore.Common/Acme.AppStore.Common.csproj", "Acme.AppStore.Common/"]
+RUN dotnet restore "books/AcmeAppStore.Books/Acme.AppStore.Books.csproj"
 COPY . .
-WORKDIR "/src/books/src"
+WORKDIR "/src/books/AcmeAppStore.Books"
 RUN dotnet build "Acme.AppStore.Books.csproj" -c Release -o /app/build
 
 FROM build AS publish

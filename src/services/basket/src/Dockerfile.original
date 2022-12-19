@@ -7,11 +7,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["basket/src/Acme.AppStore.Basket.csproj", "basket/src/"]
-COPY ["common/Acme.AppStore.Common.csproj", "common/"]
-RUN dotnet restore "basket/src/Acme.AppStore.Basket.csproj"
+COPY ["basket/Acme.AppStore.Basket/Acme.AppStore.Basket.csproj", "basket/Acme.AppStore.Basket/"]
+RUN dotnet restore "basket/Acme.AppStore.Basket/Acme.AppStore.Basket.csproj"
 COPY . .
-WORKDIR "/src/basket/src"
+WORKDIR "/src/basket/Acme.AppStore.Basket"
 RUN dotnet build "Acme.AppStore.Basket.csproj" -c Release -o /app/build
 
 FROM build AS publish

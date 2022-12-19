@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Acme.AppStore.Common\Acme.AppStore.Common.csproj" />
+    <ProjectReference Include="..\..\common\Acme.AppStore.Common.csproj" />
   </ItemGroup>
 
 </Project>

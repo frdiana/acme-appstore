@@ -7,11 +7,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["games/src/Acme.AppStore.Games.csproj", "games/src/"]
-COPY ["common/Acme.AppStore.Common.csproj", "common/"]
-RUN dotnet restore "games/src/Acme.AppStore.Games.csproj"
+COPY ["games/AcmeAppStore.Games/Acme.AppStore.Games.csproj", "games/AcmeAppStore.Games/"]
+COPY ["Acme.AppStore.Common/Acme.AppStore.Common.csproj", "Acme.AppStore.Common/"]
+RUN dotnet restore "games/AcmeAppStore.Games/Acme.AppStore.Games.csproj"
 COPY . .
-WORKDIR "/src/games/src"
+WORKDIR "/src/games/AcmeAppStore.Games"
 RUN dotnet build "Acme.AppStore.Games.csproj" -c Release -o /app/build
 
 FROM build AS publish

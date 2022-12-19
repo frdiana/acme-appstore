@@ -10,7 +10,7 @@ public class BooksController : ControllerBase
 {
     private static Book[] Books => new Book[] { new Book("Anna Karenina", "Novel"), new Book("Madame Bovary", "Novel"), new Book("War and Peace", "Novel"), new Book("The Adventures of Huckleberry Finn", "Novel"), new Book("Hamlet ", "Novel") };
 
-    [HttpGet(Name = "GetBooks")]
+    [HttpGet]
     public Book[] Get()
     {
         return Books;
